@@ -4,6 +4,6 @@ build/
 .vscode/
 .idea/
 *.md
-third_party/
 api/
-frontend/
+images/
+.github/

@@ -1,43 +1,38 @@
-# Используем официальный образ Ubuntu с компилятором
+# Этап 1: Сборка
 FROM ubuntu:22.04 AS builder
 
-# Устанавливаем зависимости для сборки
+# Устанавливаем компилятор и CMake
 RUN apt-get update && apt-get install -y \
     build-essential \
     cmake \
-    git \
-    wget \
     && rm -rf /var/lib/apt/lists/*
 
-# Устанавливаем vcpkg
-WORKDIR /opt
-RUN git clone https://github.com/microsoft/vcpkg.git && \
-    cd vcpkg && \
-    ./bootstrap-vcpkg.sh
-
-# Копируем исходники
+# Рабочая папка
 WORKDIR /app
-COPY . .
+
+# Копируем исходники и библиотеки
+COPY src/ ./src/
+COPY third_party/ ./third_party/
+COPY data/ ./data/
+COPY CMakeLists.txt ./
 
 # Собираем проект
-RUN cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=/opt/vcpkg/scripts/buildsystems/vcpkg.cmake && \
+RUN cmake -B build -S . -DCMAKE_BUILD_TYPE=Release && \
     cmake --build build
 
-# Финальный образ (минимальный)
+# Этап 2: Минимальный образ для запуска
 FROM ubuntu:22.04
 
-# Устанавливаем только необходимые библиотеки для запуска
 RUN apt-get update && apt-get install -y \
     libstdc++6 \
     && rm -rf /var/lib/apt/lists/*
 
-# Копируем бинарник и данные
 WORKDIR /app
+
+# Копируем только бинарник и данные
 COPY --from=builder /app/build/portfolio_server .
 COPY --from=builder /app/data ./data
 
-# Открываем порт
 EXPOSE 8080
 
-# Запускаем сервер
 CMD ["./portfolio_server"]
