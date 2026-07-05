@@ -172,6 +172,1555 @@
           "alt": "03 рев"
         }
       ]
+    },
+    {
+      "id": 6,
+      "name": "12 месяцев",
+      "description": "Model medal 12 месяцев",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "12 месяцев"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/12 месяцев/окт ав 01.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/12 месяцев/окт ав 01.png",
+          "alt": "окт ав 01"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/12 месяцев/окт бок 01.png",
+          "alt": "окт бок 01"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/12 месяцев/окт рев 01.png",
+          "alt": "окт рев 01"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "3 штыка",
+      "description": "Model medal 3 штыка",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "3 штыка"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/3 штыка/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/3 штыка/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/3 штыка/02 ав.png",
+          "alt": "02 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/3 штыка/03 бок.png",
+          "alt": "03 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/3 штыка/04 бок.png",
+          "alt": "04 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/3 штыка/05 бок.png",
+          "alt": "05 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/3 штыка/06 бок.png",
+          "alt": "06 бок"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "8 городов волгоград",
+      "description": "Model medal 8 городов волгоград",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "8 городов волгоград"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/8 городов волгоград/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/8 городов волгоград/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/8 городов волгоград/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/8 городов волгоград/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/8 городов волгоград/02 ав.png",
+          "alt": "02 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/8 городов волгоград/02 рев.png",
+          "alt": "02 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/8 городов волгоград/03 ав.png",
+          "alt": "03 ав"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "8 городов краснодар",
+      "description": "Model medal 8 городов краснодар",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "8 городов краснодар"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/8 городов краснодар/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/8 городов краснодар/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/8 городов краснодар/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/8 городов краснодар/01 бок2.png",
+          "alt": "01 бок2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/8 городов краснодар/01 бок3.png",
+          "alt": "01 бок3"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/8 городов краснодар/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/8 городов краснодар/03 ав.png",
+          "alt": "03 ав"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "euro champ",
+      "description": "Model medal euro champ",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "euro champ"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/euro champ/ 01 рев.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/euro champ/ 01 рев.png",
+          "alt": " 01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/euro champ/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/euro champ/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/euro champ/02 бок.png",
+          "alt": "02 бок"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "forum cup",
+      "description": "Model medal forum cup",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "forum cup"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/forum cup/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/forum cup/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/forum cup/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/forum cup/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/forum cup/02 бок.png",
+          "alt": "02 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/forum cup/03 бок.png",
+          "alt": "03 бок"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "mx700 2026",
+      "description": "Model medal mx700 2026",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "mx700 2026"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/mx700 2026/01 рев.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/mx700 2026/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/mx700 2026/ав 01 бр.png",
+          "alt": "ав 01 бр"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/mx700 2026/ав 01 зол.png",
+          "alt": "ав 01 зол"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/mx700 2026/ав 01 сер.png",
+          "alt": "ав 01 сер"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "zigzag 2026",
+      "description": "Model medal zigzag 2026",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "zigzag 2026"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/zigzag 2026/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/zigzag 2026/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/zigzag 2026/01 бок.png",
+          "alt": "01 бок"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "акварель",
+      "description": "Model medal акварель",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "акварель"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/акварель/ав01.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/акварель/ав01.png",
+          "alt": "ав01"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/акварель/рев 01.png",
+          "alt": "рев 01"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "амер футбол",
+      "description": "Model medal амер футбол",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "амер футбол"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/амер футбол/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/амер футбол/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/амер футбол/01 рев справа.png",
+          "alt": "01 рев справа"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/амер футбол/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/амер футбол/02 ав.png",
+          "alt": "02 ав"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "бьютиран",
+      "description": "Model medal бьютиран",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "бьютиран"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/бьютиран/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/бьютиран/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/бьютиран/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/бьютиран/01 рев.png",
+          "alt": "01 рев"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "викинги",
+      "description": "Model medal викинги",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "викинги"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/викинги/01.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/викинги/01.png",
+          "alt": "01"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/викинги/02.png",
+          "alt": "02"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "ВМ",
+      "description": "Model medal ВМ",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "вм"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/ВМ/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/ВМ/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/ВМ/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/ВМ/01 бок2.png",
+          "alt": "01 бок2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/ВМ/01 рев.png",
+          "alt": "01 рев"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "волейбол",
+      "description": "Model medal волейбол",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "волейбол"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/волейбол/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/волейбол/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/волейбол/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/волейбол/01 бок2.png",
+          "alt": "01 бок2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/волейбол/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/волейбол/02 ав.png",
+          "alt": "02 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/волейбол/02 бок.png",
+          "alt": "02 бок"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "время сильных",
+      "description": "Model medal время сильных",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "время сильных"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/время сильных/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/время сильных/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/время сильных/01 бок.png",
+          "alt": "01 бок"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "гандикап полумарафон ростов",
+      "description": "Model medal гандикап полумарафон ростов",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "гандикап полумарафон ростов"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/гандикап полумарафон ростов/01.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/гандикап полумарафон ростов/01.png",
+          "alt": "01"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/гандикап полумарафон ростов/02.png",
+          "alt": "02"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "георгиевский полумарафон 2026",
+      "description": "Model medal георгиевский полумарафон 2026",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "георгиевский полумарафон 2026"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/георгиевский полумарафон 2026/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/георгиевский полумарафон 2026/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/георгиевский полумарафон 2026/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/георгиевский полумарафон 2026/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/георгиевский полумарафон 2026/02 бок.png",
+          "alt": "02 бок"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "горы",
+      "description": "Model medal горы",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "горы"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/горы/06.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/горы/06.png",
+          "alt": "06"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/горы/06_01.png",
+          "alt": "06_01"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "гтошки",
+      "description": "Model medal гтошки",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "гтошки"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/гтошки/01 ав брон.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/гтошки/01 ав брон.png",
+          "alt": "01 ав брон"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/гтошки/01 ав зол.png",
+          "alt": "01 ав зол"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/гтошки/01 ав сер.png",
+          "alt": "01 ав сер"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/гтошки/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/гтошки/02 ав.png",
+          "alt": "02 ав"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "дорогами памяти",
+      "description": "Model medal дорогами памяти",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "дорогами памяти"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/дорогами памяти/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/дорогами памяти/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/дорогами памяти/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/дорогами памяти/01 бок2.png",
+          "alt": "01 бок2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/дорогами памяти/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/дорогами памяти/01 рельеф.png",
+          "alt": "01 рельеф"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "золотой дельфин",
+      "description": "Model medal золотой дельфин",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "золотой дельфин"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/золотой дельфин/золто.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/золотой дельфин/золто.png",
+          "alt": "золто"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/золотой дельфин/золто2.png",
+          "alt": "золто2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/золотой дельфин/серебро.png",
+          "alt": "серебро"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "игры титанов",
+      "description": "Model medal игры титанов",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "игры титанов"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/игры титанов/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/игры титанов/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/игры титанов/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/игры титанов/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/игры титанов/02 рев.png",
+          "alt": "02 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/игры титанов/03 рев.png",
+          "alt": "03 рев"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "кавказран",
+      "description": "Model medal кавказран",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "кавказран"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кавказран/кавказран 5 реверс.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кавказран/кавказран 5 реверс.png",
+          "alt": "кавказран 5 реверс"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кавказран/кавказран 5 эмали.png",
+          "alt": "кавказран 5 эмали"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "кавказран 2",
+      "description": "Model medal кавказран 2",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "кавказран 2"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кавказран 2/03 зел.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кавказран 2/03 зел.png",
+          "alt": "03 зел"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кавказран 2/03 чер.png",
+          "alt": "03 чер"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кавказран 2/рев 01.png",
+          "alt": "рев 01"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "каменск ран",
+      "description": "Model medal каменск ран",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "каменск ран"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/каменск ран/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/каменск ран/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/каменск ран/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/каменск ран/01 сзади.png",
+          "alt": "01 сзади"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/каменск ран/01 слева.png",
+          "alt": "01 слева"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/каменск ран/01 справа.png",
+          "alt": "01 справа"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "кикбоксинг",
+      "description": "Model medal кикбоксинг",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "кикбоксинг"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кикбоксинг/бронза.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кикбоксинг/бронза.png",
+          "alt": "бронза"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кикбоксинг/золото.png",
+          "alt": "золото"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кикбоксинг/реверс.png",
+          "alt": "реверс"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кикбоксинг/серебро.png",
+          "alt": "серебро"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кикбоксинг/снизу.png",
+          "alt": "снизу"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "клин волейбол",
+      "description": "Model medal клин волейбол",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "клин волейбол"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/клин волейбол/01.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/клин волейбол/01.png",
+          "alt": "01"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "космический забег",
+      "description": "Model medal космический забег",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "космический забег"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/космический забег/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/космический забег/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/космический забег/01 бок3.png",
+          "alt": "01 бок3"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/космический забег/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/космический забег/02 рев.png",
+          "alt": "02 рев"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "кремлевский жим",
+      "description": "Model medal кремлевский жим",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "кремлевский жим"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кремлевский жим/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кремлевский жим/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кремлевский жим/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кремлевский жим/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кремлевский жим/01 рев1.png",
+          "alt": "01 рев1"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "кубок газпром нефти 1 этап",
+      "description": "Model medal кубок газпром нефти 1 этап",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "кубок газпром нефти 1 этап"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кубок газпром нефти 1 этап/01 бр.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кубок газпром нефти 1 этап/01 бр.png",
+          "alt": "01 бр"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кубок газпром нефти 1 этап/01 зол.png",
+          "alt": "01 зол"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кубок газпром нефти 1 этап/01 сер.png",
+          "alt": "01 сер"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кубок газпром нефти 1 этап/02 бр.png",
+          "alt": "02 бр"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "кубок эндуро",
+      "description": "Model medal кубок эндуро",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "кубок эндуро"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кубок эндуро/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кубок эндуро/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кубок эндуро/02 ав.png",
+          "alt": "02 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/кубок эндуро/03 ав.png",
+          "alt": "03 ав"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "лермантов",
+      "description": "Model medal лермантов",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "лермантов"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лермантов/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лермантов/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лермантов/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лермантов/01 бок2.png",
+          "alt": "01 бок2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лермантов/01 бок3.png",
+          "alt": "01 бок3"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лермантов/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лермантов/02 ав бок.png",
+          "alt": "02 ав бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лермантов/02 ав.png",
+          "alt": "02 ав"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "лига новичков zigzag",
+      "description": "Model medal лига новичков zigzag",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "лига новичков zigzag"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лига новичков zigzag/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лига новичков zigzag/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лига новичков zigzag/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лига новичков zigzag/02 бок.png",
+          "alt": "02 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лига новичков zigzag/рев.png",
+          "alt": "рев"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "лфл футзал",
+      "description": "Model medal лфл футзал",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "лфл футзал"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лфл футзал/вторая .png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лфл футзал/вторая .png",
+          "alt": "вторая "
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лфл футзал/высшая.png",
+          "alt": "высшая"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лфл футзал/первая.png",
+          "alt": "первая"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/лфл футзал/рев.png",
+          "alt": "рев"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "мегаполис",
+      "description": "Model medal мегаполис",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "мегаполис"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/мегаполис/01 реверс.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/мегаполис/01 реверс.png",
+          "alt": "01 реверс"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/мегаполис/01.png",
+          "alt": "01"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "медаль зен",
+      "description": "Model medal медаль зен",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "медаль зен"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/медаль зен/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/медаль зен/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/медаль зен/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/медаль зен/01 рев.png",
+          "alt": "01 рев"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "медаль наградная",
+      "description": "Model medal медаль наградная",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "медаль наградная"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/медаль наградная/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/медаль наградная/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/медаль наградная/01 бок.png",
+          "alt": "01 бок"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "мел 2026",
+      "description": "Model medal мел 2026",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "мел 2026"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/мел 2026/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/мел 2026/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/мел 2026/01 рев.png",
+          "alt": "01 рев"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "моржи ростов",
+      "description": "Model medal моржи ростов",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "моржи ростов"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/моржи ростов/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/моржи ростов/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/моржи ростов/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/моржи ростов/01 рев.png",
+          "alt": "01 рев"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "на высокой волне",
+      "description": "Model medal на высокой волне",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "на высокой волне"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/на высокой волне/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/на высокой волне/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/на высокой волне/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/на высокой волне/01 рев.png",
+          "alt": "01 рев"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "нпз",
+      "description": "Model medal нпз",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "нпз"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/нпз/03 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/нпз/03 ав.png",
+          "alt": "03 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/нпз/03 слева.png",
+          "alt": "03 слева"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "омон рукопашный",
+      "description": "Model medal омон рукопашный",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "омон рукопашный"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/омон рукопашный/ав 01.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/омон рукопашный/ав 01.png",
+          "alt": "ав 01"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/омон рукопашный/рев 01.png",
+          "alt": "рев 01"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/омон рукопашный/справа 01.png",
+          "alt": "справа 01"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "орден тыл фронту",
+      "description": "Model medal орден тыл фронту",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "орден тыл фронту"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/орден тыл фронту/вместе 01.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/орден тыл фронту/вместе 01.png",
+          "alt": "вместе 01"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/орден тыл фронту/вставка 01.png",
+          "alt": "вставка 01"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/орден тыл фронту/основа 01.png",
+          "alt": "основа 01"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/орден тыл фронту/реверс 01.png",
+          "alt": "реверс 01"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "парашют",
+      "description": "Model medal парашют",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "парашют"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/парашют/ав 02.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/парашют/ав 02.png",
+          "alt": "ав 02"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/парашют/рев 02.png",
+          "alt": "рев 02"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/парашют/сверху 02.png",
+          "alt": "сверху 02"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/парашют/снизу 02.png",
+          "alt": "снизу 02"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "провэй",
+      "description": "Model medal провэй",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "провэй"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/провэй/бронза ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/провэй/бронза ав.png",
+          "alt": "бронза ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/провэй/золото ав.png",
+          "alt": "золото ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/провэй/серебро ав.png",
+          "alt": "серебро ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/провэй/серебро рев.png",
+          "alt": "серебро рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/провэй/синий ав.png",
+          "alt": "синий ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/провэй/синий рев.png",
+          "alt": "синий рев"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "рандоннеры",
+      "description": "Model medal рандоннеры",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "рандоннеры"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/рандоннеры/01 рев.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/рандоннеры/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/рандоннеры/03 ав.png",
+          "alt": "03 ав"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "ростов",
+      "description": "Model medal ростов",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "ростов"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/ростов/ав01.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/ростов/ав01.png",
+          "alt": "ав01"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/ростов/ав02.png",
+          "alt": "ав02"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/ростов/ав03.png",
+          "alt": "ав03"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/ростов/рев01.png",
+          "alt": "рев01"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "ростов повтор",
+      "description": "Model medal ростов повтор",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "ростов повтор"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/ростов повтор/01 ав.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/ростов повтор/01 ав.png",
+          "alt": "01 ав"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/ростов повтор/01 рев.png",
+          "alt": "01 рев"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/ростов повтор/01 справа.png",
+          "alt": "01 справа"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "рулим сами",
+      "description": "Model medal рулим сами",
+      "category": "Medal",
+      "polygon_count": 0,
+      "created_at": "2026-07-05",
+      "tags": [
+        "medal",
+        "render",
+        "рулим сами"
+      ],
+      "software": "Blender",
+      "preview_image_url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/рулим сами/01 бок.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/рулим сами/01 бок.png",
+          "alt": "01 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/рулим сами/02 бок.png",
+          "alt": "02 бок"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/рулим сами/бронз.png",
+          "alt": "бронз"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/рулим сами/зол.png",
+          "alt": "зол"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/images/рулим сами/сер.png",
+          "alt": "сер"
+        }
+      ]
     }
   ]
 }

@@ -11,18 +11,34 @@ servers:
 paths:
   /api/models:
     get:
-      summary: Получить список всех 3D моделей
-      description: Возвращает краткую информацию о всех моделях для превью-страницы
+      summary: Получить список 3D моделей с пагинацией
+      description: Возвращает краткую информацию о моделях с поддержкой пагинации
       operationId: listModels
+      parameters:
+        - name: page
+          in: query
+          required: false
+          description: Номер страницы (начинается с 1)
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: limit
+          in: query
+          required: false
+          description: Количество моделей на странице
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 10
       responses:
         '200':
           description: Успешный ответ
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/ModelSummary'
+                $ref: '#/components/schemas/PaginatedModelsResponse'
         '500':
           description: Внутренняя ошибка сервера
 
@@ -52,6 +68,36 @@ paths:
 
 components:
   schemas:
+    PaginatedModelsResponse:
+      type: object
+      required:
+        - models
+        - total
+        - page
+        - limit
+        - totalPages
+      properties:
+        models:
+          type: array
+          items:
+            $ref: '#/components/schemas/ModelSummary'
+        total:
+          type: integer
+          description: Общее количество моделей
+          example: 54
+        page:
+          type: integer
+          description: Текущая страница
+          example: 1
+        limit:
+          type: integer
+          description: Количество моделей на странице
+          example: 10
+        totalPages:
+          type: integer
+          description: Общее количество страниц
+          example: 6
+
     ModelSummary:
       type: object
       required:

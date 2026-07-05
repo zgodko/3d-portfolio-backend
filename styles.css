@@ -233,3 +233,68 @@ footer {
         padding: 1.5rem;
     }
 }
+
+/* Пагинация */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 3rem 0 2rem;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    background: white;
+    color: #667eea;
+    border: 2px solid #667eea;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 44px;
+}
+
+.pagination button:hover:not(:disabled) {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.pagination button.active {
+    background: #667eea;
+    color: white;
+    font-weight: bold;
+}
+
+.pagination button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.pagination .page-info {
+    color: white;
+    margin: 0 1rem;
+    font-size: 0.95rem;
+}
+
+/* Адаптивность для пагинации */
+@media (max-width: 768px) {
+    .pagination {
+        gap: 0.25rem;
+    }
+    
+    .pagination button {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.9rem;
+        min-width: 38px;
+    }
+    
+    .pagination .page-info {
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
+        order: -1;
+    }
+}
