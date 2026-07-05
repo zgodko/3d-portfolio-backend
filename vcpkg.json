@@ -1,0 +1,9 @@
+{
+  "name": "3d-portfolio-backend",
+  "version": "0.1.0",
+  "description": "C++ backend for 3D models portfolio",
+  "dependencies": [
+    "cpp-httplib",
+    "nlohmann-json"
+  ]
+}

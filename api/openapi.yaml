@@ -1,0 +1,85 @@
+openapi: "3.0.3"
+info:
+  title: "3D Portfolio Backend API"
+  version: "0.1.0"
+  description: "REST API для выдачи данных о 3D моделях и их превью"
+servers:
+  - url: "http://localhost:8080"
+    description: "Локальный сервер разработки"
+
+paths:
+  /api/models:
+    get:
+      summary: "Получить список всех работ"
+      operationId: "getModelsList"
+      responses:
+        "200":
+          description: "Успешный ответ"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/ModelSummary"
+
+  /api/models/{modelId}:
+    get:
+      summary: "Получить детали конкретной работы"
+      operationId: "getModelDetails"
+      parameters:
+        - name: modelId
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        "200":
+          description: "Детали модели"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ModelDetails"
+        "404":
+          description: "Модель не найдена"
+
+components:
+  schemas:
+    ModelSummary:
+      type: object
+      required: [id, title, thumbnail_url]
+      properties:
+        id:
+          type: integer
+          format: int64
+        title:
+          type: string
+          description: "Название работы"
+        thumbnail_url:
+          type: string
+          description: "Ссылка на превью-изображение"
+        short_desc:
+          type: string
+          description: "Краткое описание"
+
+    ModelDetails:
+      allOf:
+        - $ref: "#/components/schemas/ModelSummary"
+        - type: object
+          properties:
+            full_description:
+              type: string
+            images:
+              type: array
+              items:
+                type: string
+            software_used:
+              type: array
+              items:
+                type: string
+            polygons_count:
+              type: integer
+              description: "Количество полигонов"
+            created_at:
+              type: string
+              format: date-time
