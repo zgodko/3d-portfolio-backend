@@ -1,85 +1,132 @@
-openapi: "3.0.3"
+openapi: 3.0.3
 info:
-  title: "3D Portfolio Backend API"
-  version: "0.1.0"
-  description: "REST API для выдачи данных о 3D моделях и их превью"
+  title: 3D Portfolio Backend API
+  description: API для получения списка 3D моделей и их деталей
+  version: 0.1.0
+
 servers:
-  - url: "http://localhost:8080"
-    description: "Локальный сервер разработки"
+  - url: http://localhost:8080
+    description: Локальный сервер для разработки
 
 paths:
   /api/models:
     get:
-      summary: "Получить список всех работ"
-      operationId: "getModelsList"
+      summary: Получить список всех 3D моделей
+      description: Возвращает краткую информацию о всех моделях для превью-страницы
+      operationId: listModels
       responses:
-        "200":
-          description: "Успешный ответ"
+        '200':
+          description: Успешный ответ
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/ModelSummary"
+                  $ref: '#/components/schemas/ModelSummary'
+        '500':
+          description: Внутренняя ошибка сервера
 
-  /api/models/{modelId}:
+  /api/models/{id}:
     get:
-      summary: "Получить детали конкретной работы"
-      operationId: "getModelDetails"
+      summary: Получить детали конкретной модели
+      description: Возвращает полную информацию о модели со всеми картинками
+      operationId: getModelById
       parameters:
-        - name: modelId
+        - name: id
           in: path
           required: true
+          description: Уникальный идентификатор модели
           schema:
-            type: integer
-            format: int64
+            type: string
       responses:
-        "200":
-          description: "Детали модели"
+        '200':
+          description: Успешный ответ
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ModelDetails"
-        "404":
-          description: "Модель не найдена"
+                $ref: '#/components/schemas/ModelDetails'
+        '404':
+          description: Модель не найдена
+        '500':
+          description: Внутренняя ошибка сервера
 
 components:
   schemas:
     ModelSummary:
       type: object
-      required: [id, title, thumbnail_url]
+      required:
+        - id
+        - name
+        - preview_image_url
       properties:
         id:
-          type: integer
-          format: int64
-        title:
           type: string
-          description: "Название работы"
-        thumbnail_url:
+          example: "model-001"
+        name:
           type: string
-          description: "Ссылка на превью-изображение"
-        short_desc:
+          example: "Sci-Fi Corridor"
+        preview_image_url:
           type: string
-          description: "Краткое описание"
+          format: uri
+          example: "https://example.com/images/corridor-preview.jpg"
+        category:
+          type: string
+          example: "Environment"
+        created_at:
+          type: string
+          format: date
+          example: "2026-05-15"
 
     ModelDetails:
-      allOf:
-        - $ref: "#/components/schemas/ModelSummary"
-        - type: object
-          properties:
-            full_description:
-              type: string
-            images:
-              type: array
-              items:
-                type: string
-            software_used:
-              type: array
-              items:
-                type: string
-            polygons_count:
-              type: integer
-              description: "Количество полигонов"
-            created_at:
-              type: string
-              format: date-time
+      type: object
+      required:
+        - id
+        - name
+        - description
+        - images
+      properties:
+        id:
+          type: string
+          example: "model-001"
+        name:
+          type: string
+          example: "Sci-Fi Corridor"
+        description:
+          type: string
+          example: "Детализированная модель коридора космической станции"
+        category:
+          type: string
+          example: "Environment"
+        polygon_count:
+          type: integer
+          example: 45000
+        created_at:
+          type: string
+          format: date
+          example: "2026-05-15"
+        tags:
+          type: array
+          items:
+            type: string
+          example: ["sci-fi", "corridor", "space", "pbr"]
+        images:
+          type: array
+          items:
+            $ref: '#/components/schemas/Image'
+        software:
+          type: string
+          example: "Blender 4.0, Substance Painter"
+
+    Image:
+      type: object
+      required:
+        - url
+        - alt
+      properties:
+        url:
+          type: string
+          format: uri
+          example: "https://example.com/images/corridor-01.jpg"
+        alt:
+          type: string
+          example: "Вид коридора спереди"
