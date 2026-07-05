@@ -1,5 +1,5 @@
 // URL бэкенда (локальный сервер)
-const API_URL = 'http://localhost:8080';
+const API_URL = 'https://threed-portfolio-backend-12o3.onrender.com';
 
 // Элементы DOM
 const modelsGrid = document.getElementById('models-grid');
