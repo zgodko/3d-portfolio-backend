@@ -25,6 +25,13 @@ json loadModelsFromFile(const std::string& filename) {
     return data;
 }
 
+// Функция для добавления CORS заголовков
+void setCORSHeaders(httplib::Response& res) {
+    res.set_header("Access-Control-Allow-Origin", "*");
+    res.set_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+    res.set_header("Access-Control-Allow-Headers", "Content-Type");
+}
+
 int main() {
     // Загружаем данные из файла при старте
     std::cout << "Loading models data..." << std::endl;
@@ -38,11 +45,20 @@ int main() {
     
     httplib::Server svr;
     
+    // Pre-routing handler для CORS (обрабатывает OPTIONS запросы)
+    svr.Options("(.*)", [](const httplib::Request&, httplib::Response& res) {
+        res.set_header("Access-Control-Allow-Origin", "*");
+        res.set_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+        res.set_header("Access-Control-Allow-Headers", "Content-Type");
+        res.status = 204;
+    });
+    
     // Эндпоинт: GET /api/models - список всех моделей
     svr.Get("/api/models", [&modelsData](const httplib::Request&, httplib::Response& res) {
         if (modelsData.empty() || !modelsData.contains("models")) {
             res.status = 500;
             res.set_content(R"({"error":"Failed to load models data"})", "application/json; charset=utf-8");
+            setCORSHeaders(res);
             return;
         }
         
@@ -60,6 +76,7 @@ int main() {
         }
         
         res.set_content(summaryList.dump(2), "application/json; charset=utf-8");
+        setCORSHeaders(res);
     });
     
     // Эндпоинт: GET /api/models/:id - детали конкретной модели
@@ -69,6 +86,7 @@ int main() {
         if (modelsData.empty() || !modelsData.contains("models")) {
             res.status = 500;
             res.set_content(R"({"error":"Failed to load models data"})", "application/json; charset=utf-8");
+            setCORSHeaders(res);
             return;
         }
         
@@ -96,6 +114,7 @@ int main() {
             if (idMatches) {
                 // Возвращаем полную информацию (ModelDetails)
                 res.set_content(model.dump(2), "application/json; charset=utf-8");
+                setCORSHeaders(res);
                 return;
             }
         }
@@ -103,11 +122,13 @@ int main() {
         // Модель не найдена
         res.status = 404;
         res.set_content(R"({"error":"Model not found"})", "application/json; charset=utf-8");
+        setCORSHeaders(res);
     });
     
     // Старый эндпоинт для проверки
     svr.Get("/hello", [](const httplib::Request&, httplib::Response& res) {
         res.set_content("Hello from 3D Portfolio Backend!", "text/plain; charset=utf-8");
+        setCORSHeaders(res);
     });
     
     std::cout << "Starting server on port 8080..." << std::endl;
@@ -115,6 +136,7 @@ int main() {
     std::cout << "  GET http://localhost:8080/api/models - list all models" << std::endl;
     std::cout << "  GET http://localhost:8080/api/models/{id} - get model details" << std::endl;
     std::cout << "  GET http://localhost:8080/hello - health check" << std::endl;
+    std::cout << "CORS enabled for all origins" << std::endl;
     
     svr.listen("0.0.0.0", 8080);
     
