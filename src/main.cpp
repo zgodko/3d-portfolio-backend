@@ -3,6 +3,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <cstdlib>
 
 using json = nlohmann::json;
 
@@ -45,7 +46,7 @@ int main() {
     
     httplib::Server svr;
     
-    // Pre-routing handler для CORS (обрабатывает OPTIONS запросы)
+    // Pre-routing handler для CORS
     svr.Options("(.*)", [](const httplib::Request&, httplib::Response& res) {
         res.set_header("Access-Control-Allow-Origin", "*");
         res.set_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
@@ -53,7 +54,7 @@ int main() {
         res.status = 204;
     });
     
-    // Эндпоинт: GET /api/models - список всех моделей
+    // Эндпоинт: GET /api/models
     svr.Get("/api/models", [&modelsData](const httplib::Request&, httplib::Response& res) {
         if (modelsData.empty() || !modelsData.contains("models")) {
             res.status = 500;
@@ -62,7 +63,6 @@ int main() {
             return;
         }
         
-        // Возвращаем только краткую информацию (ModelSummary)
         json summaryList = json::array();
         for (const auto& model : modelsData["models"]) {
             json summary = {
@@ -79,7 +79,7 @@ int main() {
         setCORSHeaders(res);
     });
     
-    // Эндпоинт: GET /api/models/:id - детали конкретной модели
+    // Эндпоинт: GET /api/models/:id
     svr.Get(R"(/api/models/([^/]+))", [&modelsData](const httplib::Request& req, httplib::Response& res) {
         std::string modelIdStr = req.matches[1];
         
@@ -90,7 +90,6 @@ int main() {
             return;
         }
         
-        // Пытаемся преобразовать ID в число для сравнения
         int modelIdNum = 0;
         bool isNumericId = true;
         try {
@@ -99,11 +98,9 @@ int main() {
             isNumericId = false;
         }
         
-        // Ищем модель по ID
         for (const auto& model : modelsData["models"]) {
             json idField = model.value("id", json());
             
-            // Проверяем, совпадает ли ID (поддерживаем и числовой, и строковый формат)
             bool idMatches = false;
             if (isNumericId && idField.is_number_integer()) {
                 idMatches = (idField.get<int>() == modelIdNum);
@@ -112,33 +109,33 @@ int main() {
             }
             
             if (idMatches) {
-                // Возвращаем полную информацию (ModelDetails)
                 res.set_content(model.dump(2), "application/json; charset=utf-8");
                 setCORSHeaders(res);
                 return;
             }
         }
         
-        // Модель не найдена
         res.status = 404;
         res.set_content(R"({"error":"Model not found"})", "application/json; charset=utf-8");
         setCORSHeaders(res);
     });
     
-    // Старый эндпоинт для проверки
     svr.Get("/hello", [](const httplib::Request&, httplib::Response& res) {
         res.set_content("Hello from 3D Portfolio Backend!", "text/plain; charset=utf-8");
         setCORSHeaders(res);
     });
     
-    std::cout << "Starting server on port 8080..." << std::endl;
-    std::cout << "API endpoints:" << std::endl;
-    std::cout << "  GET http://localhost:8080/api/models - list all models" << std::endl;
-    std::cout << "  GET http://localhost:8080/api/models/{id} - get model details" << std::endl;
-    std::cout << "  GET http://localhost:8080/hello - health check" << std::endl;
-    std::cout << "CORS enabled for all origins" << std::endl;
+    // Читаем порт из переменной окружения
+    const char* portEnv = std::getenv("PORT");
+    int port = portEnv ? std::stoi(portEnv) : 8080;
     
-    svr.listen("0.0.0.0", 8080);
+    std::cout << "Starting server on port " << port << "..." << std::endl;
+    std::cout << "API endpoints:" << std::endl;
+    std::cout << "  GET /api/models - list all models" << std::endl;
+    std::cout << "  GET /api/models/{id} - get model details" << std::endl;
+    std::cout << "  GET /hello - health check" << std::endl;
+    
+    svr.listen("0.0.0.0", port);
     
     return 0;
 }

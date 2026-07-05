@@ -1,0 +1,9 @@
+build/
+.git/
+.gitignore
+.vscode/
+.idea/
+*.md
+third_party/
+api/
+frontend/
