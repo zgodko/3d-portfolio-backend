@@ -15,7 +15,6 @@ cmake_install.cmake
 Makefile
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.suo
