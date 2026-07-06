@@ -21,7 +21,9 @@ Makefile
 *.user
 
 # Secrets (КРИТИЧНО!)
-.env
+# Игнорируем только локальные файлы с секретами
+.env.local
+.env.*.local
 *.key
 *.pem
 secrets/
