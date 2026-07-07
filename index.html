@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Портфолио</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>3D Портфолио</h1>
@@ -16,7 +18,7 @@
         <div id="models-grid" class="models-grid">
             <!-- Карточки моделей будут добавлены через JavaScript -->
         </div>
-        
+
         <!-- Пагинация -->
         <div id="pagination" class="pagination">
             <!-- Кнопки пагинации будут добавлены через JavaScript -->
@@ -38,5 +40,12 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Lightbox для полноэкранного просмотра -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
 </body>
+
 </html>

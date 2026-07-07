@@ -18,6 +18,45 @@ const modal = document.getElementById('modal');
 const modalBody = document.getElementById('modal-body');
 const closeBtn = document.querySelector('.close');
 
+// Lightbox элементы
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxClose = document.querySelector('.lightbox-close');
+
+// Открытие lightbox
+function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Блокируем прокрутку
+}
+
+// Закрытие lightbox
+function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Закрытие по клику на крестик
+lightboxClose.onclick = (e) => {
+    e.stopPropagation();
+    closeLightbox();
+};
+
+// Закрытие по клику вне картинки
+lightbox.onclick = (e) => {
+    if (e.target === lightbox) {
+        closeLightbox();
+    }
+};
+
+// Закрытие по Escape
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeLightbox();
+    }
+});
+
 // Закрытие модального окна
 closeBtn.onclick = () => {
     modal.style.display = 'none';
@@ -50,7 +89,7 @@ async function loadModels(page = 1) {
     currentPage = page;
     modelsGrid.innerHTML = '<p style="color: white; text-align: center; grid-column: 1/-1;">Загрузка...</p>';
     pagination.innerHTML = '';
-    
+
     if (!useStaticMode) {
         // Режим бэкенда
         try {
@@ -73,7 +112,7 @@ async function loadModels(page = 1) {
             return;
         }
     }
-    
+
     // Статический режим
     displayCurrentPageStatic();
     displayPagination();
@@ -110,17 +149,17 @@ function displayCurrentPageStatic() {
 // Отображение карточек моделей
 function displayModels(models) {
     modelsGrid.innerHTML = '';
-    
+
     if (models.length === 0) {
         modelsGrid.innerHTML = '<p style="color: white; text-align: center; grid-column: 1/-1;">Нет моделей для отображения</p>';
         return;
     }
-    
+
     models.forEach(model => {
         const card = document.createElement('div');
         card.className = 'model-card';
         card.onclick = () => showModelDetails(model.id);
-        
+
         card.innerHTML = `
             <img src="${model.preview_image_url}" alt="${model.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/300x250?text=No+Image'">
             <div class="model-card-content">
@@ -129,7 +168,7 @@ function displayModels(models) {
                 <p class="date">${formatDate(model.created_at)}</p>
             </div>
         `;
-        
+
         modelsGrid.appendChild(card);
     });
 }
@@ -137,16 +176,16 @@ function displayModels(models) {
 // Отображение пагинации
 function displayPagination() {
     pagination.innerHTML = '';
-    
+
     if (totalPages <= 1) return; // Не показываем пагинацию, если одна страница
-    
+
     // Кнопка "Назад"
     const prevBtn = document.createElement('button');
     prevBtn.textContent = '← Назад';
     prevBtn.disabled = currentPage === 1;
     prevBtn.onclick = () => loadModels(currentPage - 1);
     pagination.appendChild(prevBtn);
-    
+
     // Номера страниц
     const pageNumbers = getPageNumbers(currentPage, totalPages);
     pageNumbers.forEach(num => {
@@ -165,13 +204,13 @@ function displayPagination() {
             pagination.appendChild(btn);
         }
     });
-    
+
     // Информация о странице
     const info = document.createElement('span');
     info.className = 'page-info';
     info.textContent = `(стр. ${currentPage} из ${totalPages})`;
     pagination.appendChild(info);
-    
+
     // Кнопка "Вперёд"
     const nextBtn = document.createElement('button');
     nextBtn.textContent = 'Вперёд →';
@@ -184,10 +223,10 @@ function displayPagination() {
 function getPageNumbers(current, total) {
     const pages = [];
     const delta = 1; // количество страниц слева и справа от текущей
-    
+
     const left = current - delta;
     const right = current + delta;
-    
+
     for (let i = 1; i <= total; i++) {
         if (i === 1 || i === total || (i >= left && i <= right)) {
             pages.push(i);
@@ -195,7 +234,7 @@ function getPageNumbers(current, total) {
             pages.push('...');
         }
     }
-    
+
     return pages;
 }
 
@@ -211,7 +250,7 @@ async function showModelDetails(modelId) {
         modal.style.display = 'block';
     } catch (error) {
         console.error('Error loading model details from backend:', error);
-        
+
         // Fallback на статический режим
         if (useStaticMode) {
             const model = allStaticModels.find(m => m.id === modelId || m.id === parseInt(modelId));
@@ -229,14 +268,14 @@ async function showModelDetails(modelId) {
 
 // Отображение деталей модели в модальном окне
 function displayModelDetails(model) {
-    const imagesHtml = model.images.map(img => 
-        `<img src="${img.url}" alt="${img.alt}" loading="lazy" onerror="this.src='https://via.placeholder.com/250x200?text=No+Image'">`
+    const imagesHtml = model.images.map(img =>
+        `<img src="${img.url}" alt="${img.alt}" loading="lazy" onclick="openLightbox('${img.url}', '${img.alt}')" style="cursor: zoom-in;" onerror="this.src='https://via.placeholder.com/250x200?text=No+Image'">`
     ).join('');
-    
-    const tagsHtml = model.tags.map(tag => 
+
+    const tagsHtml = model.tags.map(tag =>
         `<span class="tag">${tag}</span>`
     ).join('');
-    
+
     modalBody.innerHTML = `
         <h2>${model.name}</h2>
         <p class="description">${model.description}</p>
