@@ -58,7 +58,7 @@ int main() {
         res.status = 204;
     });
 
-    // Эндпоинт: GET /api/models?page=1&limit=10
+    // Эндпоинт: GET /api/models?page=1&limit=12
     svr.Get("/api/models", [&modelsData](const httplib::Request &req,
                                          httplib::Response &res) {
         if (modelsData.empty() || !modelsData.contains("models")) {
@@ -71,7 +71,7 @@ int main() {
 
         // Парсим query параметры
         int page = 1;
-        int limit = 10;
+        int limit = 12;
 
         if (req.has_param("page")) {
             try {
@@ -87,11 +87,11 @@ int main() {
             try {
                 limit = std::stoi(req.get_param_value("limit"));
                 if (limit < 1)
-                    limit = 10;
+                    limit = 12;
                 if (limit > 100)
                     limit = 100;
             } catch (...) {
-                limit = 10;
+                limit = 12;
             }
         }
 

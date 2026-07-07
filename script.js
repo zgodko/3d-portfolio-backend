@@ -5,7 +5,7 @@ const API_URL = 'https://3d-portfolio-backend-abc123.onrender.com'; // <-- За�
 const MODELS_JSON_URL = 'https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/data/models.json';
 
 // Настройки пагинации
-const ITEMS_PER_PAGE = 10;
+const ITEMS_PER_PAGE = 12;
 let currentPage = 1;
 let totalPages = 1;
 let useStaticMode = false; // true если бэкенд недоступен
