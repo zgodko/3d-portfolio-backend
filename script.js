@@ -1,5 +1,5 @@
 // URL бэкенда на Render (ЗАМЕНИ НА СВОЙ URL!)
-const API_URL = 'https://3d-portfolio-backend-abc123.onrender.com'; // <-- Замени!
+const API_URL = 'https://threed-portfolio-backend-12o3.onrender.com'; 
 
 // URL для models.json (fallback)
 const MODELS_JSON_URL = 'https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/data/models.json';
