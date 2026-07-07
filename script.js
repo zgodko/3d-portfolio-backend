@@ -22,6 +22,9 @@ const closeBtn = document.querySelector('.close');
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
 const lightboxClose = document.querySelector('.lightbox-close');
+if (!lightboxClose) {
+    console.error('Lightbox close button not found in HTML!');
+}
 
 // Открытие lightbox
 function openLightbox(src, alt) {
@@ -38,10 +41,12 @@ function closeLightbox() {
 }
 
 // Закрытие по клику на крестик
-lightboxClose.onclick = (e) => {
-    e.stopPropagation();
-    closeLightbox();
-};
+if (lightboxClose) {
+    lightboxClose.onclick = (e) => {
+        e.stopPropagation();
+        closeLightbox();
+    };
+}
 
 // Закрытие по клику вне картинки
 lightbox.onclick = (e) => {
