@@ -1,5 +1,5 @@
 // URL бэкенда на Render (ЗАМЕНИ НА СВОЙ URL!)
-const API_URL = 'https://threed-portfolio-backend-12o3.onrender.com'; 
+const API_URL = 'https://threed-portfolio-backend-12o3.onrender.com';
 
 // URL для models.json (fallback)
 const MODELS_JSON_URL = 'https://raw.githubusercontent.com/zgodko/3d-portfolio-backend/main/data/models.json';
@@ -25,6 +25,11 @@ const lightboxClose = document.querySelector('.lightbox-close');
 if (!lightboxClose) {
     console.error('Lightbox close button not found in HTML!');
 }
+
+// Поиск
+const searchInput = document.getElementById('search-input');
+const searchClear = document.getElementById('search-clear');
+let isSearchMode = false;
 
 // Открытие lightbox
 function openLightbox(src, alt) {
@@ -73,24 +78,38 @@ window.onclick = (event) => {
     }
 };
 
-// Чтение номера страницы из URL (hash)
+// Чтение номера страницы и поискового запроса из URL
 function getPageFromURL() {
     const hash = window.location.hash;
+
+    // Проверяем поисковый запрос
+    const searchMatch = hash.match(/search=([^&]+)/);
+    if (searchMatch) {
+        return { page: 1, search: decodeURIComponent(searchMatch[1]) };
+    }
+
+    // Проверяем номер страницы
     const match = hash.match(/page=(\d+)/);
     if (match) {
         const page = parseInt(match[1], 10);
-        if (page >= 1) return page;
+        if (page >= 1) return { page: page, search: '' };
     }
-    return 1;
+    return { page: 1, search: '' };
 }
 
-// Обновление URL с номером страницы
-function updateURL(page) {
-    window.location.hash = `page=${page}`;
+// Обновление URL с номером страницы и поисковым запросом
+function updateURL(page, searchQuery = '') {
+    if (searchQuery) {
+        window.location.hash = `search=${encodeURIComponent(searchQuery)}`;
+    } else if (page > 1) {
+        window.location.hash = `page=${page}`;
+    } else {
+        history.replaceState(null, '', window.location.pathname);
+    }
 }
 
 // Загрузка списка моделей
-async function loadModels(page = 1) {
+async function loadModels(page = 1, searchQuery = '') {
     currentPage = page;
     modelsGrid.innerHTML = '<p style="color: white; text-align: center; grid-column: 1/-1;">Загрузка...</p>';
     pagination.innerHTML = '';
@@ -98,15 +117,36 @@ async function loadModels(page = 1) {
     if (!useStaticMode) {
         // Режим бэкенда
         try {
-            const response = await fetch(`${API_URL}/api/models?page=${page}&limit=${ITEMS_PER_PAGE}`);
+            let url;
+            if (searchQuery) {
+                // Режим поиска
+                url = `${API_URL}/api/models?search=${encodeURIComponent(searchQuery)}`;
+            } else {
+                // Режим пагинации
+                url = `${API_URL}/api/models?page=${page}&limit=${ITEMS_PER_PAGE}`;
+            }
+
+            const response = await fetch(url);
             if (!response.ok) {
                 throw new Error(`Backend returned ${response.status}`);
             }
             const data = await response.json();
-            totalPages = data.totalPages;
-            displayModels(data.models);
-            displayPagination();
-            updateURL(page);
+
+            if (searchQuery) {
+                // Режим поиска — нет пагинации
+                totalPages = 1;
+                isSearchMode = true;
+                displayModels(data.models);
+                pagination.innerHTML = '';
+            } else {
+                // Режим пагинации
+                totalPages = data.totalPages;
+                isSearchMode = false;
+                displayModels(data.models);
+                displayPagination();
+            }
+
+            updateURL(page, searchQuery);
             window.scrollTo({ top: 0, behavior: 'smooth' });
             return;
         } catch (error) {
@@ -119,10 +159,36 @@ async function loadModels(page = 1) {
     }
 
     // Статический режим
-    displayCurrentPageStatic();
-    displayPagination();
-    updateURL(page);
+    if (searchQuery) {
+        // Поиск в статическом режиме
+        const filtered = filterStaticModels(searchQuery);
+        displayModels(filtered);
+        pagination.innerHTML = '';
+        isSearchMode = true;
+    } else {
+        displayCurrentPageStatic();
+        displayPagination();
+        isSearchMode = false;
+    }
+
+    updateURL(page, searchQuery);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Фильтрация моделей в статическом режиме
+function filterStaticModels(query) {
+    const queryLower = query.toLowerCase();
+    return allStaticModels.filter(model => {
+        // Поиск по названию
+        if (model.name.toLowerCase().includes(queryLower)) {
+            return true;
+        }
+        // Поиск по тегам
+        if (model.tags && model.tags.some(tag => tag.toLowerCase().includes(queryLower))) {
+            return true;
+        }
+        return false;
+    });
 }
 
 // Загрузка статических данных (fallback)
@@ -325,14 +391,52 @@ function formatDate(dateString) {
     });
 }
 
-// Обработка изменения hash в URL (кнопки "Назад"/"Вперёд" в браузере)
+
+// Обработка изменения hash в URL (кнопки "Назад"/"Вперёд" в браузере и поиск)
 window.addEventListener('hashchange', () => {
-    const page = getPageFromURL();
-    if (page !== currentPage) {
+    const { page, search } = getPageFromURL();
+    if (search) {
+        searchInput.value = search;
+        searchClear.style.display = 'block';
+        loadModels(1, search);
+    } else if (page !== currentPage) {
         loadModels(page);
     }
 });
 
-// Загрузка данных при старте
-currentPage = getPageFromURL();
-loadModels(currentPage);
+// Обработчики поиска
+let searchTimeout;
+searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.trim();
+
+    // Показываем/скрываем кнопку очистки
+    searchClear.style.display = query ? 'block' : 'none';
+
+    // Debounce: ждём 300мс после последнего ввода
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+        if (query) {
+            loadModels(1, query);
+        } else {
+            loadModels(1);
+        }
+    }, 300);
+});
+
+searchClear.addEventListener('click', () => {
+    searchInput.value = '';
+    searchClear.style.display = 'none';
+    loadModels(1);
+    searchInput.focus();
+});
+
+// Загрузка данных при старте (полный список моделей или фильтрованный поиск)
+const { page: initialPage, search: initialSearch } = getPageFromURL();
+if (initialSearch) {
+    searchInput.value = initialSearch;
+    searchClear.style.display = 'block';
+    loadModels(1, initialSearch);
+} else {
+    currentPage = initialPage;
+    loadModels(currentPage);
+}
